@@ -4,12 +4,72 @@
 <title>Beб-cтpaницa</title>
 <meta charset="utf-8">
 <meta name="keywords" соntеnt="веб-страница первая">
+<link rel="stylesheet" href="./main.css">
 </head>
 <body text="yellow" bgcolor="black">
 Моя первая веб-страница
 <h1 align=center> Пример </h1>
 <h1 align=justify> Пример </h1>
-<hr>
+<hr width=400px>
 <hr color="red" >
+<dl>
+<hЗ>Список определений</hЗ>
+<dt>Понятие l</dt>
+<dd>Определение понятия l</dd>
+<dt>Понятие 2</dt>
+<dd>Определение понятия 2</dd>
+</dl>
+<dl>
+<hЗ>Список определений</hЗ>
+<dt>Понятие l</dt>
+<dd>Определение понятия l</dd>
+<dt>Понятие 2
+<ul>
+<hЗ>Пример вложенных списков</hЗ>
+<li>Пункт 1</li>
+<ol>
+<li>Пункт 1.1</li>
+<li>Пункт 1.2</li>
+</ol>
+<li>Пункт 2</li>
+<ol type="i">
+<li>Пункт 2.1</li>
+<li>Пункт 2.2</li>
+<li>Пункт 2.3</li>
+</ol>
+<li>Пункт 3</li>
+<ol type="I">
+<li>Пункт 3.1</li>
+</ol>
+</ul>
+</dt>
+<dd style="color: #FF0000" >Определение понятия 2</dd>
+</dl>
+<table width="760" cellpadding="l0" cellspacing="l0" border="l">
+<TR>
+<TD align="center">Лoгoтип</TD>
+<TD rоwsраn="2"> Oсновной материал </TD>
+</TR>
+<TR>
+<td>Меню</TD>
+</TR>
+</table>
+<script>
+var colorArray = ["#fac46e", "#5a9c6e", "#fadcbb", "#ffaa22",
+"#fe2233"]; // создаем массив с цветами фона
+var i=0;
+function changeColor() {
+document.body.style.background = colorArray[i];
+i++;
+if( i > colorArray.length - 1){
+i=0;}
+}
+</script>
+<button onclick="changeColor ();">Сменить · цвет фoнa</button>
+<footer>
+<script>
+document.write("Bвeдитe свое имя");
+</script>
+</footer>
 </body>
 </html>
